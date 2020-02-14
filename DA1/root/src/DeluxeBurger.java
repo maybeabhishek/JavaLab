@@ -8,7 +8,7 @@ public class DeluxeBurger extends Burger {
 	}
 
 	public void addAdditions(boolean chips, boolean drinks) {
-		System.out.println("Additional additions you added: ");
+		System.out.println("The sides you added: ");
 		if(chips == true){
 			additions.add(chips);
 			System.out.println("CHIPS");

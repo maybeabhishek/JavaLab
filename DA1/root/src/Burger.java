@@ -2,7 +2,7 @@ package DA1.root.src;
 
 import java.util.ArrayList;
 import java.util.List;
-public class Burger {
+public class Burger extends Food {
 	private String name;
 	private String breadRollType;
 	private boolean meat;
@@ -14,14 +14,14 @@ public class Burger {
 		this.name = name;
 		this.breadRollType = breadRollType;
 		this.meat = true;
-		this.base_price = 2;
+		this.base_price = 80;
 	}
 	
 	public List<Boolean> additions = new ArrayList<Boolean>();
-	public double addedPrice = 0.5;
+	public double addedPrice = 15;
 	
 	public void addAdditions(boolean lettuce, boolean tomato, boolean carrot, boolean ham){
-		System.out.println("Additional additions you added: ");
+		System.out.println("Additional toppings you added: ");
 		if(lettuce == true){
 			additions.add(lettuce);	
 			System.out.println("LETTUCE");
